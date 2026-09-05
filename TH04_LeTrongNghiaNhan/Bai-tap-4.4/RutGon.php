@@ -116,9 +116,14 @@ if (isset($_POST['tinh'])) {
         if ($mau == 0) {
             $thongBaoLoi = "Mẫu số phải khác 0!";
         } else {
-            $ketQua = rutGonPhanSo($tu, $mau);
-            $tuRutGon = $ketQua['tu'];
-            $mauRutGon = $ketQua['mau'];
+            if ($tu == 0) {
+                $tuRutGon = 0;
+                $mauRutGon = $mau;
+            } else {
+                $ketQua = rutGonPhanSo($tu, $mau);
+                $tuRutGon = $ketQua['tu'];
+                $mauRutGon = $ketQua['mau'];
+            }
         }
     } else {
         $thongBaoLoi = "Vui lòng nhập đầy đủ tử số và mẫu số!";
