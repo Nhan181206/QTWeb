@@ -64,7 +64,6 @@ function usc($a, $b) {
     $a = abs($a);
     $b = abs($b);
     
-    // Thuật toán Euclid tìm UCLN
     while ($b != 0) {
         $temp = $b;
         $b = $a % $b;
