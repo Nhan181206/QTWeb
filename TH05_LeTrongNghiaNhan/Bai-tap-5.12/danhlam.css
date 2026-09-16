@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #c5f973;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-main {
+    background-color: #c69c3a;
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.content-container {
+    display: flex;
+    min-height: 500px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #80ffff;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar-header {
+    background-color: #ff4500;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sidebar-list {
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 8px;
+}
+
+.sidebar-list a {
+    color: #0000ff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-content {
+    width: 70%;
+    background-color: #ffffff;
+}
+
+.main-header {
+    background-color: #ff4500;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.details-container {
+    padding: 20px;
+}
+
+.dl-item {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.dl-title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dl-image {
+    max-width: 320px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.dl-desc {
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.back-top {
+    text-align: right;
+}
+
+.back-top a {
+    color: #0000ff;
+    font-size: 12px;
+    text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+}
+
+form {
+    width: 450px;
+    background-color: #d2e0d3;
+    border: 1px solid #000;
+}
+
+.container {
+    background-color: #319897;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container h2 {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+
+table tr td {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+table tr td:first-child {
+    width: 35%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 3px 5px;
+    border: 1px solid #7f9db9;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+}
+
+input[name="so_can_tim"] {
+    width: 40%;
+}
+
+.kq-input {
+    color: #d00000 !important;
+    font-weight: bold;
+    background-color: #cde5eb !important;
+}
+
+.btn {
+    background-color: #9cbbf1;
+    border: 1px solid #666;
+    padding: 2px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: #83a8e6;
+}
+
+.footer-note {
+    background-color: #72c1c0;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    color: #000;
+}
