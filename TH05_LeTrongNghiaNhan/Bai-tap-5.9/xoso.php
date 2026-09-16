@@ -12,6 +12,7 @@
         $day_tang = '';
         $may_sinh = '';
         $ket_qua = '';
+        $mang_trung = [];
 
         function format_so($n){
             return sprintf("%02d", (int)$n);
@@ -45,7 +46,7 @@
     ?>
 
     <form action="xoso.php" method="post">
-        <div>
+        <div class="title">
             <h2>CHƯƠNG TRÌNH SỔ XỐ BẰNG PHP</h2>
         </div>
 
@@ -65,19 +66,45 @@
             <tr>
                 <td>Dãy số bạn đã nhập sau khi xếp tăng</td>
                 <td>
-                    <input type="text" disabled value="<?php echo htmlspecialchars($day_tang); ?>">
+                    <div class="result-box">
+                        <?php 
+                        if (!empty($day_tang)) {
+                            $nums = explode('-', $day_tang);
+                            foreach ($nums as $index => $num) {
+                                $is_match = in_array((int)$num, $mang_trung);
+                                $class = $is_match ? 'red-text' : '';
+                                echo "<span class='$class'>$num</span>";
+                                if ($index < count($nums) - 1) echo '-';
+                            }
+                        }
+                        ?>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>Dãy số kết quả do máy sinh ra</td>
                 <td>
-                    <input type="text" disabled value="<?php echo htmlspecialchars($may_sinh); ?>">
+                    <div class="result-box">
+                        <?php 
+                        if (!empty($may_sinh)) {
+                            $nums = explode('-', $may_sinh);
+                            foreach ($nums as $index => $num) {
+                                $is_match = in_array((int)$num, $mang_trung);
+                                $class = $is_match ? 'red-text' : '';
+                                echo "<span class='$class'>$num</span>";
+                                if ($index < count($nums) - 1) echo '-';
+                            }
+                        }
+                        ?>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>Kết quả dò số</td>
                 <td>
-                    <input type="text" disabled value="<?php echo htmlspecialchars($ket_qua); ?>">
+                    <div class="result-box">
+                        <?php echo htmlspecialchars($ket_qua); ?>
+                    </div>
                 </td>
             </tr>
         </table>
