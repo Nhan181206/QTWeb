@@ -28,7 +28,7 @@
 
                 $mang_may = [];
                 for($i = 0; $i < 5; $i++){
-                    $mang_may[] = rand(0, 55);
+                    $mang_may[] = rand(0, 99);
                 }
 
                 $may_sinh = implode('-', array_map('format_so', $mang_may));
