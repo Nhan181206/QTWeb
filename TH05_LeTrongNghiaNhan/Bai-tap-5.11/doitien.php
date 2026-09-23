@@ -34,9 +34,11 @@
             $so_tien = (float)$so_tien_raw;
 
             if ($so_tien > 0 && isset($ti_gia[$don_vi_chon])) {
+                // Tính số tiền quy đổi
                 $rate = $ti_gia[$don_vi_chon];
                 $tien_vnd = $so_tien * $rate;
 
+                // Phần dịnh dạng
                 $so_tien_bd_str = number_format($so_tien) . " " . $don_vi_chon;
                 $ti_gia_str = number_format($rate, strpos((string)$rate, '.') !== false ? 2 : 0);
                 $tien_vnd_str = number_format($tien_vnd) . " Đồng";
@@ -51,7 +53,7 @@
             <tr>
                 <td>Nhập số tiền</td>
                 <td>
-                    <input type="text" name="so_tien" value="<?php echo htmlspecialchars($so_tien_input); ?>" required>
+                    <input type="text" name="so_tien" value="<?php echo htmlspecialchars($so_tien_input); ?>">
                 </td>
             </tr>
             <tr>

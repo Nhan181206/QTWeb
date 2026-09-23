@@ -13,43 +13,43 @@
             [
                 "nt",
                 "Biển Nha Trang",
-                "https://tinviettravel.com.vn/uploads/cam-nang-du-lich/2024_08/bai-dai-nha-trang.jpg",
+                "../Pictures/Bien-nha-trang.webp",
                 "Nha Trang, thuộc tỉnh Khánh Hòa, là thành phố du lịch biển nổi tiếng nhất của Việt Nam. Các bãi biển dọc chiều dài thành phố và trên các đảo thuộc Vịnh Nha Trang như Hòn Tre, Hòn Tằm, Hòn Mun, Hòn Chồng – Vợ đều là những thắng cảnh tuyệt vời thu hút du khách trong và ngoài nước."
             ],
             [
                 "dl",
-                "Thành phố Đà Lạt",
-                "https://media.thuonghieucongluan.vn/uploads/2024/08/25/dinh-huong-phat-trien-tp-da-lat-mo-rong-1724579384.jpg",
+                "Thành Phố Đà Lạt",
+                "../Pictures/Thanh-pho-Da-La.jpg",
                 "Đà Lạt là thành phố trực thuộc tỉnh Lâm Đồng nằm trên Cao nguyên Lâm Viên thuộc vùng Tây Nguyên của nước Việt Nam. Đi sâu vào thành phố Đà Lạt, du khách sẽ khám phá một 'bảo tàng' của các thác nước, những hồ đẹp, thung lũng hoa và đồi thông."
             ],
             [
                 "dn",
                 "Đà Nẵng",
-                "https://vcdn1-dulich.vnecdn.net/2022/06/03/cau-vang-jpeg-mobile-4171-1654247848.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=j3QYvAWY_um91TZftAPXxw",
+                "../Pictures/Da-nang.webp",
                 "Đà Nẵng nằm giữa ba di sản thế giới: cố đô Huế, phố cổ Hội An và thánh địa Mỹ Sơn. Đà Nẵng còn có nhiều danh thắng tuyệt đẹp say lòng du khách như Ngũ Hành Sơn, Bà Nà, bán đảo Sơn Trà, đèo Hải Vân, sông Hàn thơ mộng và cầu quay Sông Hàn."
             ],
             [
                 "hl",
                 "Vịnh Hạ Long",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4twNwguJu7oi9J8LkFENxft3_hNHu02ZvQMkKwhh2pWTD5jm5HPL8_B8&s=10",
+                "../Pictures/Vinh-ha-long.jpg",
                 "Vịnh Hạ Long là một vịnh nhỏ thuộc phần tây bờ Vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam, bao gồm vùng biển đảo của thành phố Hạ Long, thành phố Cẩm Phả và một phần huyện đảo Vân Đồn thuộc tỉnh Quảng Ninh."
             ],
             [
                 "pt",
                 "Biển Phan Thiết",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgIOCGyfQUcOpnZnaOeFWo0d6_wTiFqHaJCVfxFNiquYSCJ-SOR9i8o1q&s=10",
+                "../Pictures/Bien-phan-thiet.jpg",
                 "Phan Thiết là tỉnh lỵ, trung tâm chính trị, kinh tế, văn hóa và khoa học kỹ thuật của tỉnh Bình Thuận. Phan Thiết nằm trên quốc lộ 1A, nổi tiếng với những đồi cát bay thơ mộng và bãi biển Mũi Né."
             ],
             [
                 "ht",
                 "Biển Hà Tiên",
-                "https://statics.vinpearl.com/bien-ha-tien-10_1634279791.jpg",
+                "../Pictures/Bien-ha-tien.webp",
                 "Hà Tiên là một thành phố thuộc tỉnh Kiên Giang, nằm ở phía tây bắc của tỉnh. Hà Tiên là mảnh đất cuối cùng của miền Tây Nam Bộ, nổi tiếng với 'Hà Tiên thập cảnh'."
             ],
             [
                 "pq",
                 "Đảo Phú Quốc",
-                "https://mia.vn/media/uploads/blog-du-lich/dao-ngoc-phu-quoc-thien-duong-nghi-duong-tai-phuong-nam-1754534991.jpg",
+                "../Pictures/Dao-phu-quoc.jpg",
                 "Phú Quốc là hòn đảo lớn nhất Việt Nam, nằm trong Gulf of Thailand. Đảo Phú Quốc cùng với các đảo khác tạo thành huyện đảo Phú Quốc trực thuộc tỉnh Kiên Giang."
             ]
         ];
