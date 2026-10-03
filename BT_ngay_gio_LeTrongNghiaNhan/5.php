@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiểm Tra Ngày Cuối Tuần</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
     <?php
@@ -26,7 +26,7 @@
                         $ket_qua = "Đây không phải là ngày cuối tuần.";
                     }
                 } else {
-                    $ket_qua = "Định dạng không hợp lệ! (d/m/Y)";
+                    $ket_qua = "Định dạng không hợp lệ! (d/m/y)";
                 }
             }
         }

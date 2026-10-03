@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiểm Tra Ngày Hợp Lệ</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
     <?php
@@ -13,6 +13,7 @@
 
         if (isset($_POST['thuc_hien'])) {
             $ngay_nhap = $_POST['ngay_nhap'] ?? '';
+            $ket_qua = $_POST['ket_qua'] ?? '';
 
             if (!empty($ngay_nhap)) {
                 $parts = explode('/', trim($ngay_nhap));

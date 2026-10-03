@@ -43,7 +43,7 @@
         }
     ?>
 
-    <form action="3.php" method="post">
+    <form action="" method="post">
         <div class="container">
             <h2>CHUYỂN THÁNG THÀNH CHỮ</h2>
         </div>

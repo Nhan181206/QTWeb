@@ -36,7 +36,7 @@
         }
     ?>
 
-    <form action="2.php" method="post">
+    <form action="" method="post">
         <div class="container">
             <h2>TÍNH KHOẢNG CÁCH</h2>
         </div>

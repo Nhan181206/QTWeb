@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngày Hôm Qua</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
     <?php
@@ -21,13 +21,13 @@
                     $date->modify('-1 day');
                     $ngay_hom_qua = $date->format('d/m/Y');
                 } else {
-                    $ngay_hom_qua = "Định dạng không hợp lệ! (d/m/Y)";
+                    $ngay_hom_qua = "Định dạng không hợp lệ! (d/m/y)";
                 }
             }
         }
     ?>
 
-    <form action="4.php" method="post">
+    <form action="" method="post">
         <div class="container">
             <h2>NGÀY HÔM QUA</h2>
         </div>
