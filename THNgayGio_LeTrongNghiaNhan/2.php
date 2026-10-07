@@ -61,8 +61,7 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td colspan="3">
+                <td colspan="2" class="btn-row">
                     <button type="submit" name="thuc_hien" >Thực hiện</button>
                 </td>
                 <td></td>
