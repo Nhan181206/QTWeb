@@ -47,20 +47,19 @@
             <tr>
                 <td>Ngày đầu: </td>
                 <td>
-                    <input type="text" name="ngay_dau" value="<?php echo htmlspecialchars($ngay_dau) ?>"/>
+                    <input type="text" name="ngay_dau" readonly value="<?php echo htmlspecialchars($ngay_dau) ?>"/>
                 </td>
             </tr>
             <tr>
                 <td>Ngày cuối: </td>
                 <td>
-                    <input type="text" name="ngay_cuoi" value="<?php echo htmlspecialchars($ngay_cuoi) ?>"/>
+                    <input type="text" name="ngay_cuoi" readonly value="<?php echo htmlspecialchars($ngay_cuoi) ?>"/>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" class="btn-row">
                     <button type="submit" name="thuc_hien">Thục hiện</button>
                 </td>
-                <td></td>
             </tr>
         </table>
     </form>

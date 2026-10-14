@@ -56,7 +56,7 @@
             <tr>
                 <td>Kiểm tra:</td>
                 <td>
-                    <input type="text" name="ket_qua" class="ket-qua-do" value="<?php echo htmlspecialchars($ket_qua); ?>"/>
+                    <input type="text" name="ket_qua" class="ket-qua-do" readonly value="<?php echo htmlspecialchars($ket_qua); ?>"/>
                 </td>
             </tr>
             <tr>
