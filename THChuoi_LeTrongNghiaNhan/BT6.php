@@ -50,7 +50,7 @@
             <tr>
                 <td>Nhập chuỗi:</td>
                 <td>
-                    <input type="text" name="nhap" value="<?php echo htmlspecialchars($nhap); ?>">
+                    <input type="text" name="nhap" required value="<?php echo htmlspecialchars($nhap); ?>">
                 </td>
             </tr>
             <tr>

@@ -22,7 +22,7 @@
                 $i++;
             }
 
-            if(!empty($dem_mang)){
+            if(!empty($demmang)){
                 $maxchar = '';
                 $maxcount = -1;
 

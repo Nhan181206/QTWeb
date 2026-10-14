@@ -1,22 +1,22 @@
-<?php 
-    $username = '';
-    $password = '';
+<?php
+    $nhap = '';
+    $pass = '';
     $kq = '';
 
-    if(isset($_POST['thuchien'])){
-        $username = $_POST['username'] ?? '';
-        $password = $_POST['password'] ?? '';
-        $dungusername = 'abc';
-        $dungpassword = '123';
+    $data = [
+        'user1' => '123456',
+        'user2' => '13579',
+        'user3' => '246810'
+    ];
 
-        if($username !== '' && $password !== ''){
-            if($username === $dungusername && $password === $dungpassword){
-                $kq = "Đăng nhập thành công.";
-            } else {
-                $kq = "Username hoặc password không chính xác.";
-            }
+    if(isset($_POST['thuchien'])) {
+        $nhap = $_POST['nhap'] ?? '';
+        $pass = $_POST['pass'] ?? '';
+
+        if(isset($data[$nhap]) && $data[$nhap] == $pass) {
+            $kq = "Đăng nhập thành công";
         } else {
-            $kq = "Vui lòng nhập đầy đủ thông tin!";
+            $kq = "Đăng nhập thất bại";
         }
     }
 ?>
@@ -38,13 +38,13 @@
             <tr>
                 <td>Nhập username:</td>
                 <td>
-                    <input type="text" name="username" value="<?php echo htmlspecialchars($username); ?>">
+                    <input type="text" name="nhap" required value="<?php echo htmlspecialchars($nhap); ?>">
                 </td>
             </tr>
             <tr>
                 <td>Nhập password:</td>
                 <td>
-                    <input type="password" name="password" value="<?php echo htmlspecialchars($password); ?>">
+                    <input type="password" name="pass" required value="<?php echo htmlspecialchars($pass); ?>">
                 </td>
             </tr>
             <tr>

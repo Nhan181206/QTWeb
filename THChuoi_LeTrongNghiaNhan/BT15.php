@@ -8,7 +8,7 @@
         $chuoicon = $_POST['chuoicon'] ?? '';
 
         if($nhap !== '' && $chuoicon !== ''){
-            $vitri = strpos($nhap, $chuoicon);
+            $vitri = stripos($nhap, $chuoicon);
 
             if($vitri !== false){
                 $kq = "Đã tìm thấy " . $chuoicon . " tại vị trí " . $vitri;

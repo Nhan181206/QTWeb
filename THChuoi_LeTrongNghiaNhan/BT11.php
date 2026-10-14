@@ -10,7 +10,7 @@
         $dodai = $_POST['dodai'] ?? '';
 
         if($nhap !== '' && $vitri !== '' && $dodai !== ''){
-            $kq = substr($nhap, (int)$vitri, (int)$dodai);
+            $kq = substr($nhap, $vitri, $dodai);
         } else {
             $kq = "Vui lòng nhập đầy đủ thông tin!";
         }
