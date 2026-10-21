@@ -12,7 +12,7 @@
     }
 
     // Câu lệnh truy vấn để đọc và thêm dữ liệu từ database local
-    // $sqlSelect = "SELECT * FROM tin_xahoi";
+    $sqlSelect = "SELECT * FROM tin_xahoi";
 
     // $sqlInsert = "INSERT INTO tin_xahoi (title, date, description, content)
     //              VALUES ('Tin hot', '2016-10-24', 'Đây là mô tả cho tin hot', 'Nội dung chi tiết của tin hot')";
@@ -22,18 +22,18 @@
     // $sqlUpdate = "UPDATE tin_xahoi SET title = 'Học có trễ đâu', content = 'Đây là nội dung của bài viết Học có trễ đâu' WHERE id = 1";
 
     // Select
-    // $result = $connect -> query($sqlSelect);
-    // if ($result === false) {
-    //     die("Lỗi truy vấn danh sách: " . $connect -> error);
-    // }
+    $result = $connect -> query($sqlSelect);
+    if ($result === false) {
+        die("Lỗi truy vấn danh sách: " . $connect -> error);
+    }
 
-    // if($result -> num_rows > 0) {
-    //     while ($row = $result -> fetch_assoc()) {
-    //         echo "ID: " .$row["id"] . "<br>" . " - Title: " . $row["title"] . "<br>" . " - Date: " . $row["date"] . "<br>" . " - Description: " . $row["description"] . "<br>" . "<br>";
-    //     }
-    // } else {
-    //     echo "Không có dữ liệu" . "<br>";
-    // }
+    if($result -> num_rows > 0) {
+        while ($row = $result -> fetch_assoc()) {
+            echo "ID: " .$row["id"] . "<br>" . " - Title: " . $row["title"] . "<br>" . " - Date: " . $row["date"] . "<br>" . " - Description: " . $row["description"] . "<br>" . "<br>";
+        }
+    } else {
+        echo "Không có dữ liệu" . "<br>";
+    }
 
     // Insert
     // if($connect -> query($sqlInsert) === true) {
