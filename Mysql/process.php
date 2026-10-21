@@ -5,11 +5,11 @@ $server   = "localhost";   // Khai báo server
 $dbname   = "tintuc";      // Khai báo database
 
 // Kết nối database tintuc
-$connect = mysqli_connect($server, $username, $password, $dbname);
+$connect = new mysqli($server, $username, $password, $dbname);
 
 //Nếu kết nối bị lỗi thì xuất báo lỗi và thoát.
-if (!$connect) {
-    die("Không kết nối :" . mysqli_connect_error());
+if ($connect->connect_error) {
+    die("Không kết nối :" . $connect->connect_error);
     exit();
 }
 
@@ -22,7 +22,7 @@ $content     = $_POST['content'];
 $sql = "UPDATE tin_xahoi SET title='$title', description='$description', content='$content' WHERE id=$id";
 
 
-if (mysqli_query($connect, $sql)) {
+if ($connect->query($sql) === TRUE) {
     //Nếu kết quả kết nối thành công, trở về trang view.
     header('Location: view.php');
 } else {
@@ -31,5 +31,5 @@ if (mysqli_query($connect, $sql)) {
 }
 
 //Đóng kết nối database tintuc
-mysqli_close($connect);
+$connect->close();
 ?>
