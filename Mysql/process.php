@@ -22,7 +22,7 @@ $content     = $_POST['content'];
 $sql = "UPDATE tin_xahoi SET title='$title', description='$description', content='$content' WHERE id=$id";
 
 
-if ($connect->query($sql) === TRUE) {
+if ($connect-> query($sql) === TRUE) {
     //Nếu kết quả kết nối thành công, trở về trang view.
     header('Location: view.php');
 } else {
