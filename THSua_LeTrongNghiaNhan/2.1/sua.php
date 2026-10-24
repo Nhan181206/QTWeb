@@ -1,7 +1,7 @@
 <?php
     $server = "localhost";
-    $name = "bansua";
-    $pass = "123456";
+    $name = "root";
+    $pass = "";
     $dbname = "ql_ban_sua";
 
     $conn = new mysqli($server, $name, $pass, $dbname);
@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tin hãng sữa</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
 </head>
 <body>
     <div class="title">
