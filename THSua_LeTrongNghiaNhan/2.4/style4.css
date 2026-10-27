@@ -1,20 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9;
 }
 
-.title {
+h2 {
     text-align: center;
-    color: #000;
+    color: #e65c00;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 table {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     border-collapse: collapse;
+    background-color: #fff;
     border: 1px solid #888;
 }
 
@@ -22,42 +24,34 @@ th {
     background-color: #f2f2f2;
     color: #000;
     border: 1px solid #888;
-    padding: 8px 12px;
+    padding: 10px 12px;
     text-align: center;
     font-weight: bold;
 }
 
 td {
     border: 1px solid #888;
-    padding: 8px 12px;
+    padding: 10px 12px;
 }
 
-tr:nth-child(even) {
+.row-odd {
     background-color: #ffffff;
 }
 
-tr:nth-child(odd) {
+.row-even {
     background-color: #fcecdb;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .pagination {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 18px;
 }
 
 .pagination a {
     color: blue;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 4px;
     font-weight: bold;
 }
 
@@ -67,7 +61,7 @@ tr:nth-child(odd) {
 
 .pagination span {
     color: red;
-    margin: 0 5px;
+    margin: 0 4px;
     font-weight: bold;
     text-decoration: underline;
 }

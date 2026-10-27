@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #b35900;
+    background-color: #fff;
+}
+
+.main-title {
+    background-color: #fde8d7;
+    color: #cc3300;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #b35900;
+}
+
+.grid-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-cell {
+    width: 20%;
+    border: 1px solid #b35900;
+    padding: 5px;
+    vertical-align: top;
+    background-color: #fff;
+}
+
+.inner-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.inner-table td {
+    border: none;
+    padding: 3px 0;
+}
+
+.cell-name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.cell-weight {
+    font-size: 12px;
+    color: #333;
+}
+
+.cell-img img {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+    margin-top: 5px;
+}

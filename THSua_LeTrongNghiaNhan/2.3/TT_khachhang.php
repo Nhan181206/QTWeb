@@ -44,10 +44,10 @@ $result = $conn->query($sql);
                 echo "<td>" . htmlspecialchars($row["Ten_khach_hang"]) . "</td>";
 
                 echo "<td class='text-center'>";
-                if ($row["Phai"] == 1) {
-                    echo "<img src='images/nu.png' alt='Nữ' width='30' height='30'>"; 
+               if ($row["Phai"] == 'Nữ' || $row["Phai"] == '1') {
+                    echo "<img src='../Image/nu.jpg' alt='Nữ' width='30' height='30'>"; 
                 } else {
-                    echo "<img src='images/nam.png' alt='Nam' width='30' height='30'>";
+                    echo "<img src='../Image/nam.jpg' alt='Nam' width='30' height='30'>";
                 }
                 echo "</td>";
                 

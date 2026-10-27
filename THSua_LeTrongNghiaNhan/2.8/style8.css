@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.main-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #b35900;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.product-header {
+    background-color: #fde8d7;
+    color: #cc3300;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #b35900;
+    font-style: italic;
+}
+
+.img-column {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.img-column img {
+    width: 130px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.info-column {
+    width: 75%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.section-title {
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+    font-size: 14px;
+}
+
+.section-content {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.price-weight {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cc0000;
+}
+
+.pager {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.pager a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 3px;
+    font-weight: bold;
+}
+
+.pager a:hover {
+    text-decoration: underline;
+}
+
+.pager span {
+    color: black;
+    margin: 0 3px;
+}
+
+.pager .active-page {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,25 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "root";       
-$password = "";           
-$dbname = "ql_ban_sua";   
+$conn = mysqli_connect("localhost", "root", "", "ql_ban_sua");
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Kết nối thất bại: " . $conn->connect_error);
+if (!$conn) {
+    die("Kết nối thất bại: " . mysqli_connect_error());
 }
 
-$conn->set_charset("utf8mb4");
+mysqli_set_charset($conn, "utf8");
 
-$sql = "SELECT s.Hinh, s.Ten_sua, hs.Ten_hang_sua, ls.Ten_loai, s.Trong_luong, s.Don_gia 
-        FROM sua s
-        JOIN hang_sua hs ON s.Ma_hang_sua = hs.Ma_hang_sua
-        JOIN loai_sua ls ON s.Ma_loai_sua = ls.Ma_loai_sua";
+$sql = "SELECT sua.*, hang_sua.Ten_hang_sua, loai_sua.Ten_loai 
+        FROM sua 
+        JOIN hang_sua ON sua.Ma_hang_sua = hang_sua.Ma_hang_sua 
+        JOIN loai_sua ON sua.Ma_loai_sua = loai_sua.Ma_loai_sua";
 
-$result = $conn->query($sql);
+$result = mysqli_query($conn, $sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -29,31 +23,32 @@ $result = $conn->query($sql);
 </head>
 <body>
 
-    <div class="title">THÔNG TIN CÁC SẢN PHẨM</div>
+    <h2>THÔNG TIN CÁC SẢN PHẨM</h2>
 
-    <table class="product-table">
+    <table>
         <?php
-        if ($result && $result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>";
+        if ($result && mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $don_gia = number_format($row['Don_gia'], 0, ',', '.') . " VNĐ";
+                $trong_luong = $row['Trong_luong'] . " gr";
+                $hinh = !empty($row['Hinh']) ? trim($row['Hinh']) : "default.jpg";
                 
-                echo "<td class='col-img'>";
-                $hinh = !empty($row["Hinh"]) ? $row["Hinh"] : "default.jpg";
-                echo "<img src='Images/" . htmlspecialchars($hinh) . "' alt='" . htmlspecialchars($row["Ten_sua"]) . "'>";
+                echo "<tr>";
+
+                echo "<td class='img-col'>";
+                echo "<img src='../Image/" . htmlspecialchars($hinh) . "' alt='" . htmlspecialchars($row['Ten_sua']) . "'>";
                 echo "</td>";
 
-                echo "<td class='col-info'>";
-                echo "<div class='product-name'>" . htmlspecialchars($row["Ten_sua"]) . "</div>";
-                echo "<div class='product-detail'>";
-                echo "Nhà sản xuất: " . htmlspecialchars($row["Ten_hang_sua"]) . "<br>";
-                echo htmlspecialchars($row["Ten_loai"]) . " - " . htmlspecialchars($row["Trong_luong"]) . " gr - " . number_format($row["Don_gia"], 0, ',', '.') . " VNĐ";
-                echo "</div>";
+                echo "<td class='content-col'>";
+                echo "<div class='ten-sua'>" . htmlspecialchars($row['Ten_sua']) . "</div>";
+                echo "<div class='detail-line'>Nhà sản xuất: " . htmlspecialchars($row['Ten_hang_sua']) . "</div>";
+                echo "<div class='detail-line'>" . htmlspecialchars($row['Ten_loai']) . " - " . $trong_luong . " - " . $don_gia . "</div>";
                 echo "</td>";
                 
                 echo "</tr>";
             }
         } else {
-            echo "<tr><td colspan='2' style='text-align: center;'>Không có dữ liệu sản phẩm sữa</td></tr>";
+            echo "<tr><td colspan='2' align='center'>Không có sản phẩm nào trong cơ sở dữ liệu</td></tr>";
         }
         ?>
     </table>
@@ -62,5 +57,5 @@ $result = $conn->query($sql);
 </html>
 
 <?php
-$conn->close();
+mysqli_close($conn);
 ?>
