@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    color: #b35900;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.customer-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #b35900;
+}
+
+.customer-table th {
+    background-color: #fde8d7;
+    color: #cc3300;
+    border: 1px solid #b35900;
+    padding: 10px;
+    text-align: center;
+}
+
+.customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.customer-table tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.form-table {
+    width: 55%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #b35900;
+    background-color: #fff;
+}
+
+.form-title {
+    background-color: #fde8d7;
+    color: #cc3300;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #b35900;
+}
+
+.form-table td {
+    padding: 10px 12px;
+    border: none;
+}
+
+.form-label {
+    width: 35%;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input input[type="text"], .form-input input[type="email"] {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-submit input[type="submit"] {
+    padding: 6px 20px;
+    background-color: #fde8d7;
+    border: 1px solid #b35900;
+    font-weight: bold;
+    color: #cc3300;
+    cursor: pointer;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: #fcd5b8;
+}
+
+a {
+    color: #0000cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

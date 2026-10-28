@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.form-table {
+    width: 55%;
+    margin: 0 auto 15px auto;
+    border-collapse: collapse;
+    border: 2px solid #b35900;
+    background-color: #fff;
+}
+
+.form-title {
+    background-color: #cc3300;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-table td {
+    padding: 8px 10px;
+    border: none;
+}
+
+.form-label {
+    width: 30%;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input input[type="text"], .form-input select, .form-input textarea {
+    width: 85%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.form-submit input[type="submit"] {
+    padding: 6px 20px;
+    background-color: #fde8d7;
+    border: 1px solid #b35900;
+    font-weight: bold;
+    color: #cc3300;
+    cursor: pointer;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: #fcd5b8;
+}
+
+.notification {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.main-table {
+    width: 65%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #b35900;
+    background-color: #fff;
+}
+
+.product-header {
+    background-color: #fde8d7;
+    color: #cc3300;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #b35900;
+    font-style: italic;
+}
+
+.img-column {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.img-column img {
+    width: 120px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.info-column {
+    width: 70%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.section-title {
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+    font-size: 14px;
+}
+
+.section-content {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.price-weight {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cc0000;
+}
