@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header-banner {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.header-banner span {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+h2 {
+    text-align: center;
+    color: #cc0000;
+    margin: 20px 0 10px 0;
+    font-size: 22px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.search-box select {
+    padding: 3px 5px;
+    width: 200px;
+}
+
+.search-box input[type="submit"] {
+    padding: 3px 12px;
+    background-color: #f2f2f2;
+    border: 1px solid #888;
+    cursor: pointer;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #888;
+    background-color: #fff;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #000;
+    border: 1px solid #888;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+td {
+    border: 1px solid #888;
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+.footer-banner {
+    background-color: #66b3ff;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 1.4;
+}

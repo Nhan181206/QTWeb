@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <title>Danh Mục Xe Máy</title>
-    <link rel="stylesheet" href="./style_xemay.css">
+    <link rel="stylesheet" href="./style2.css">
 </head>
 <body>
 

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-box {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #4a90e2;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.form-group input[type="text"], .form-group select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 5px 12px;
+    background-color: #f2f2f2;
+    border: 1px solid #888;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e2e2e2;
+}
+
+.sv-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #888;
+}
+
+.sv-table th {
+    background-color: #f2f2f2;
+    color: #000;
+    border: 1px solid #888;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.sv-table td {
+    border: 1px solid #888;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+/* Phân trang */
+.pager {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.pager a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+.pager a:hover {
+    text-decoration: underline;
+}
+
+.pager .active-page {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
