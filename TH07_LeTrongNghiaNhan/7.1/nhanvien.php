@@ -10,7 +10,6 @@ mysqli_set_charset($conn, "utf8mb4");
 $sql = "SELECT manv, CONCAT(ho, ' ', ten) as hoten, phai, ngaysinh, diachi, mapb FROM nhanvien";
 $result = mysqli_query($conn, $sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -25,7 +24,7 @@ $result = mysqli_query($conn, $sql);
     <table>
         <tr>
             <th>STT</th>
-            <th>MãNV</th>
+            <th>Mã NV</th>
             <th>Họ tên</th>
             <th>Phái</th>
             <th>Ngày sinh</th>
@@ -36,11 +35,13 @@ $result = mysqli_query($conn, $sql);
         if ($result && mysqli_num_rows($result) > 0) {
             $stt = 1;
             while ($row = mysqli_fetch_assoc($result)) {
+                $phai_text = ($row["phai"] == 1 || strtolower($row["phai"]) == 'nam') ? "Nam" : "Nữ";
+
                 echo "<tr>";
                 echo "<td class='text-center'>" . $stt++ . "</td>";
                 echo "<td class='text-center'>" . htmlspecialchars($row["manv"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["hoten"]) . "</td>";
-                echo "<td class='text-center'>" . htmlspecialchars($row["phai"]) . "</td>";
+                echo "<td class='text-center'>" . htmlspecialchars($phai_text) . "</td>";
                 echo "<td class='text-center'>" . htmlspecialchars($row["ngaysinh"]) . "</td>";
                 echo "<td>" . htmlspecialchars($row["diachi"]) . "</td>";
                 echo "<td class='text-center'>" . htmlspecialchars($row["mapb"]) . "</td>";
