@@ -63,17 +63,16 @@ if ($malop_chon !== '') {
 
                 Chọn lớp: 
                 <select name="malop">
-                    <option value="">-- Chọn lớp --</option>
-                    <?php 
-                    if ($result_lop) {
-                        while ($lop = mysqli_fetch_assoc($result_lop)) {
-                            $sel = ($malop_chon == $lop['MaLop']) ? 'selected' : '';
-                            $ten_lop_hien_thi = $lop['MaLop'] . (!empty($lop['TenLop']) ? ' - ' . $lop['TenLop'] : '');
-                            echo "<option value='" . $lop['MaLop'] . "' $sel>" . htmlspecialchars($ten_lop_hien_thi) . "</option>";
-                        }
-                    }
-                    ?>
-                </select>
+                <?php
+                $sql_lop = "SELECT malop FROM lop";
+                if ($makhoa_chon != "") $sql_lop .= " WHERE makhoa = '$makhoa_chon'";
+                $lop = mysqli_query($conn, $sql_lop);
+                while($r = mysqli_fetch_assoc($lop)) {
+                    $sel = ($malop_chon == $r['malop']) ? "selected" : "";
+                    echo "<option value='{$r['malop']}' $sel>{$r['malop']}</option>";
+                }
+                ?>
+            </select>
 
                 <input type="submit" value="Xem danh sách" class="btn">
             </div>

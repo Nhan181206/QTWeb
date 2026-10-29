@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2026 at 08:14 AM
+-- Generation Time: Oct 29, 2026 at 02:33 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -31,7 +31,7 @@ CREATE TABLE `ketqua` (
   `MaSV` varchar(5) NOT NULL,
   `MaMon` varchar(5) NOT NULL,
   `Diem` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `ketqua`
@@ -77,7 +77,67 @@ INSERT INTO `ketqua` (`MaSV`, `MaMon`, `Diem`) VALUES
 ('SV10', 'M1', 9),
 ('SV10', 'M2', 5),
 ('SV10', 'M3', 6),
-('SV10', 'M4', 5);
+('SV10', 'M4', 5),
+('SV11', 'M1', 7),
+('SV11', 'M2', 8),
+('SV11', 'M3', 6),
+('SV11', 'M4', 9),
+('SV12', 'M1', 8),
+('SV12', 'M2', 7),
+('SV12', 'M3', 9),
+('SV12', 'M4', 8),
+('SV13', 'M1', 6),
+('SV13', 'M2', 5),
+('SV13', 'M3', 7),
+('SV13', 'M4', 6),
+('SV14', 'M1', 9),
+('SV14', 'M2', 8),
+('SV14', 'M3', 8),
+('SV14', 'M4', 7),
+('SV15', 'M1', 5),
+('SV15', 'M2', 6),
+('SV15', 'M3', 5),
+('SV15', 'M4', 8),
+('SV16', 'M1', 7),
+('SV16', 'M2', 7),
+('SV16', 'M3', 6),
+('SV16', 'M4', 7),
+('SV17', 'M1', 8),
+('SV17', 'M2', 9),
+('SV17', 'M3', 8),
+('SV17', 'M4', 9),
+('SV18', 'M1', 6),
+('SV18', 'M2', 6),
+('SV18', 'M3', 7),
+('SV18', 'M4', 5),
+('SV19', 'M1', 9),
+('SV19', 'M2', 7),
+('SV19', 'M3', 9),
+('SV19', 'M4', 8),
+('SV20', 'M1', 4),
+('SV20', 'M2', 5),
+('SV20', 'M3', 6),
+('SV20', 'M4', 5),
+('SV21', 'M1', 8),
+('SV21', 'M2', 8),
+('SV21', 'M3', 7),
+('SV21', 'M4', 9),
+('SV22', 'M1', 7),
+('SV22', 'M2', 6),
+('SV22', 'M3', 8),
+('SV22', 'M4', 7),
+('SV23', 'M1', 9),
+('SV23', 'M2', 9),
+('SV23', 'M3', 10),
+('SV23', 'M4', 9),
+('SV24', 'M1', 6),
+('SV24', 'M2', 7),
+('SV24', 'M3', 6),
+('SV24', 'M4', 8),
+('SV25', 'M1', 8),
+('SV25', 'M2', 8),
+('SV25', 'M3', 9),
+('SV25', 'M4', 10);
 
 -- --------------------------------------------------------
 
@@ -134,7 +194,7 @@ CREATE TABLE `monhoc` (
   `MaMon` varchar(5) NOT NULL,
   `TenMon` varchar(45) NOT NULL,
   `SoTinChi` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `monhoc`
@@ -200,13 +260,6 @@ INSERT INTO `sinhvien` (`MaSV`, `Ho`, `Ten`, `GioiTinh`, `NgaySinh`, `NoiSinh`, 
 --
 
 --
--- Indexes for table `ketqua`
---
-ALTER TABLE `ketqua`
-  ADD PRIMARY KEY (`MaSV`,`MaMon`),
-  ADD KEY `MaMon` (`MaMon`);
-
---
 -- Indexes for table `khoa`
 --
 ALTER TABLE `khoa`
@@ -236,13 +289,6 @@ ALTER TABLE `sinhvien`
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `ketqua`
---
-ALTER TABLE `ketqua`
-  ADD CONSTRAINT `ketqua_ibfk_1` FOREIGN KEY (`MaSV`) REFERENCES `sinhvien` (`MaSV`),
-  ADD CONSTRAINT `ketqua_ibfk_2` FOREIGN KEY (`MaMon`) REFERENCES `monhoc` (`MaMon`);
 
 --
 -- Constraints for table `lop`
