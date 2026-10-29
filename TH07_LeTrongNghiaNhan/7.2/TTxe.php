@@ -7,7 +7,7 @@ if (!$conn) {
 
 mysqli_set_charset($conn, "utf8");
 
-$sql = "SELECT MaXe, TenXe, MaLoai, Gia, HienThi, Hinh FROM xe";
+$sql = "SELECT * FROM xe";
 $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
