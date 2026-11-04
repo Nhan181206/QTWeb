@@ -34,7 +34,7 @@ $result_nv = mysqli_query($conn, $sql_nv);
 
     <div class="header-banner">
         ỦY BAN NHÂN DÂN TỈNH ĐỒNG NAI<br>
-        <span>TRƯỜNG CAO ĐẲNG NGHỀ ĐỒNG NAI</span><br>
+        <span>CAO ĐẲNG KỸ CÔNG NGHỆ ĐỒNG NAI</span><br>
         DONG NAI VOCATIONAL COLLEGE<br>
         <b>NHẤT NGHỆ TINH - NHẤT THÂN VINH</b>
     </div>
