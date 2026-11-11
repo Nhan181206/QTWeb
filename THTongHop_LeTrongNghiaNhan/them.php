@@ -19,14 +19,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['themmoi'])) {
     $manv = trim($_POST['manv'] ?? '');
     $ho = trim($_POST['ho'] ?? '');
     $ten = trim($_POST['ten'] ?? '');
-    $phai = trim($_POST['phai'] ?? 'Nam');
+
+    $phai_input = trim($_POST['phai'] ?? 'Nam');
+    $phai = ($phai_input === 'Nam') ? 1 : 0;
+
     $ngaysinh = $_POST['nam'] . '-' . $_POST['thang'] . '-' . $_POST['ngay'];
     $diachi = trim($_POST['diachi'] ?? '');
     $mapb = trim($_POST['mapb'] ?? '');
 
     if ($manv !== '') {
         $sql_insert = "INSERT INTO nhanvien (manv, ho, ten, phai, ngaysinh, diachi, mapb) 
-                       VALUES ('$manv', '$ho', '$ten', '$phai', '$ngaysinh', '$diachi', '$mapb')";
+                       VALUES ('$manv', '$ho', '$ten', $phai, '$ngaysinh', '$diachi', '$mapb')";
         if (mysqli_query($conn, $sql_insert)) {
             $thongbao = "Thêm nhân viên thành công!";
         } else {
@@ -126,7 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['themmoi'])) {
 
     <div class="footer-banner">
         SVTH: Nguyễn Đăng Khoa - Khoa Công Nghệ Thông Tin.<br>
-        Trường Cao Đẳng Nghề Đồng Nai - Số 8, Nguyễn Văn Hoa, Thống Nhất, Biên Hòa.
+        Trường Cao Đẳng Kỹ Thuật Công Nghệ Đồng Nai - Số 8, Nguyễn Văn Hoa, Thống Nhất, Biên Hòa.
     </div>
 
 </body>

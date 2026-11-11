@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql);
     <div class="header-banner">
         <a href="index.php">
             ỦY BAN NHÂN DÂN TỈNH ĐỒNG NAI<br>
-            <span>TRƯỜNG CAO ĐẲNG KỸ THUẬT CÔNG NGHỆ ĐỒNG NAI</span><br>
+            <span>TRƯỜNG CAO ĐẲNG KỸ THUẬT CỘNG NGHỆ ĐỒNG NAI</span><br>
             DONG NAI VOCATIONAL COLLEGE<br>
             <b>NHẤT NGHỆ TINH - NHẤT THÂN VINH</b>
         </a>
@@ -74,7 +74,7 @@ $result = mysqli_query($conn, $sql);
 
     <div class="footer-banner">
         SVTH: Nguyễn Đăng Khoa - Khoa Công Nghệ Thông Tin.<br>
-        Trường Cao Đẳng kỹ Thuật Vông Nghệ Đồng Nai - Số 8, Nguyễn Văn Hoa, Thống Nhất, Biên Hòa.
+        Trường Cao Đẳng kỹ Thuật Công Nghệ Đồng Nai - Số 8, Nguyễn Văn Hoa, Thống Nhất, Biên Hòa.
     </div>
 
 </body>
