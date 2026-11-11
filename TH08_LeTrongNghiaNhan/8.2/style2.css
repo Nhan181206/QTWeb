@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+}
+
+.box {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #4a90e2;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+td {
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.label {
+    width: 35%;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-box input {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.btn-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit input {
+    padding: 6px 18px;
+    background-color: #f2f2f2;
+    border: 1px solid #888;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.btn-submit input:hover {
+    background-color: #e2e2e2;
+}
+
+.links {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.links a {
+    margin: 0 15px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #4a90e2;
+}
+
+.info-row {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.info-label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.logout-link {
+    display: inline-block;
+    margin: 15px 0;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.banner-img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
