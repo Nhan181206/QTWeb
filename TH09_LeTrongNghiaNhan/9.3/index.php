@@ -13,7 +13,7 @@
         <form action="xl-upload.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 Chọn file hình cần upload<br>
-                <span class="note">(Chỉ chọn *.jpg, *.gif, *.png)[cite: 18]</span>
+                <span class="note">(Chỉ chọn *.jpg, *.gif, *.png)</span>
             </div>
             
             <div class="form-group">
