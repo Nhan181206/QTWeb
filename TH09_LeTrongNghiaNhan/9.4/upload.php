@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
         <form action="" method="GET">
             <div class="form-group">
                 Chọn số hình cần upload 
-                <input type="number" name="soluong" value="<?php echo $soluong > 0 ? $soluong : ''; ?>" min="1" max="10" required>
+                <input type="number" name="soluong" value="<?php echo $soluong > 0 ? $soluong : ''; ?>" min="1" max="100" required>
                 <input type="submit" value="Tiếp tục" class="btn">
             </div>
         </form>

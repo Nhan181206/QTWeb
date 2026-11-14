@@ -1,0 +1,4 @@
+Hoa tầm xuân|200000|abc123.jpg
+Tulip Hồng Cánh Xoắn|600000|abc124.jpg
+Tulip Rực Sắc|400000|abc125.jpg
+Mặt Trời Chói Chang|450000|abc126.jpg

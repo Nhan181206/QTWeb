@@ -1,0 +1,40 @@
+.khung {
+    width: 430px;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    background: #e97e1a;
+    color: rgb(230, 227, 41);
+    margin: 0;
+    padding: 8px;
+}
+form {
+    background: #3ceca9;
+    padding: 10px;
+    text-align: left;
+}
+form div {
+    margin: 5px 0;
+}
+input[type=text], input[type=number] {
+    width: 170px;
+}
+
+button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 4px 15px;
+}
+
+.ketqua {
+    text-align: center;
+    margin-top: 15px;
+}
+img {
+    width: 125px;
+    height: 150px;
+    object-fit: cover;
+}
