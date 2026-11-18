@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; font-family:Arial, Helvetica, sans-serif; background:#eee; }
+.wrapper{ width:1000px; margin:0 auto; background:#fff; }
+header{ position:relative; height:200px; }
+header #banner{ width:1000px; height:200px; display:block; }
+header #logo{ position:absolute; top:10px; left:10px; width:90px; height:90px; }
+nav{ background:#c0392b; overflow:hidden; }
+nav a{ float:left; padding:12px 20px; color:#fff; text-decoration:none; font-weight:bold; }
+nav a:hover{ background:#922b21; }
+.content{ padding:20px; min-height:400px; }
+h2{ text-align:center; color:#c0392b; }
+table.ds{ width:100%; border-collapse:collapse; }
+table.ds th, table.ds td{ border:1px solid #999; padding:6px; }
+table.ds th{ background:#c0392b; color:#fff; }
+table.ds img{ width:80px; }
+.form-xe{ width:520px; margin:0 auto; }
+.form-xe td{ padding:6px; }
+.form-xe input[type=text], .form-xe select, .form-xe textarea{ width:300px; }
+.thongbao{ text-align:center; font-weight:bold; margin:10px 0; }
+.thanhcong{ color:green; }
+.loi{ color:red; font-style:italic; }
+footer{ background:#333; color:#fff; text-align:center; padding:12px; }

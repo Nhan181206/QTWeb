@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; background:#3b2a1a; font-family:Georgia, "Times New Roman", serif; color:#333; }
+.wrapper{ width:900px; margin:0 auto; background:#fdf6e3; }
+header img{ display:block; width:900px; height:160px; border:0; }
+nav{ background:#5c3d1e; }
+nav ul{ list-style:none; margin:0; padding:0; overflow:hidden; }
+nav ul li{ float:left; }
+nav ul li a{ display:block; padding:12px 25px; color:#c9b79c; text-decoration:none; font-weight:bold; }
+nav ul li a:hover{ color:#fff; }
+/* Menu đang được chọn có màu sáng hơn các menu còn lại */
+nav ul li a.active{ color:#fff; background:#8b5a2b; }
+.content{ padding:20px 30px; min-height:420px; }
+h1, h2{ color:#5c3d1e; }
+a{ color:#8b3a0e; }
+.jump{ margin-bottom:20px; }
+.nhom{ overflow:hidden; border-top:2px solid #c9b79c; padding:10px 0 15px; }
+.nhom img{ float:left; width:180px; height:120px; margin-right:20px; }
+.nhom .thongke{ font-style:italic; color:#777; margin-top:-8px; }
+.nhom ul{ list-style:none; margin:0; padding:0; }
+.nhom ul li{ padding:3px 0; border-bottom:1px dotted #ccc; }
+.nhom ul li span.gia{ float:right; }
+#rate-form{ display:none; margin:15px 0; }
+.success{ color:#2e7d32; background:#e8f5e9; border:1px solid #2e7d32; padding:8px; margin:10px 0; }
+.error{ color:#c62828; background:#ffebee; border:1px solid #c62828; padding:8px; margin:10px 0; }
+footer{ background:#5c3d1e; color:#c9b79c; text-align:center; padding:12px; font-size:13px; }
+footer a{ color:#fff; }
