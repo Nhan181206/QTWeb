@@ -8,7 +8,7 @@
         echo $ho;
         echo '<br>';
         echo $ten;
-        echo '<br>';
+        echo '<br>';//fhsdjgfgdhsfckdsygh
         echo 'hoten: '.$hoten.' - namsinh:'.$namsinh;
         ?>
     </body>
